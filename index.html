@@ -9,18 +9,8 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
-    <header id="main-header">
-        <nav>
-            <ul>
-                <li>About me</li>
-                <li>Experience</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <aside class="profile" data-profile>
+        <aside class="profile" data-page="profile">
             <div class="profile-info">
                 <figure class="avatar-content">
                     <img src="assets/img/profile_370.png" alt="Profile" width="80"/>
@@ -57,183 +47,251 @@
                 </ul>
             </div>
         </aside>
-        <section class="about-section" data-page="about">
-            <article>
-                <header>
-                    <h2>About me</h2>
-                </header>
-                <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-                    My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
-                </p>
-            </article>
-            <article class="article-skills">
-                <h3>What I'm doing</h3>
-                <ul>
-                    <li class="skill-box">
-                        <figure>
-                            <img src="assets/img/odoo.png" alt="logo Odoo"/>
-                        </figure>
-                        <div class="skill-details">
-                            <h4>Odoo</h4>
-                            <p>
-                                Development on Odoo ERP to Odoo ERP to ...
-                                Development on Odoo ERP to Odoo ERP to ...
-                                Development on Odoo ERP to Odoo ERP to ...
-                                Development on Odoo ERP to Odoo ERP to ...
-                                Development on Odoo ERP to Odoo ERP to ...
-                            </p>
-                        </div>
-                    </li>
-                    <li class="skill-box">
-                        <figure>
-                            <img src="assets/img/python.png" alt="logo Python"/>
-                        </figure>
-                        <div class="skill-details">
-                            <h4>Python</h4>
-                            <p>Development on Odoo ERP to ...</p>
-                        </div>
-                    </li>
-                    <li class="skill-box">
-                        <figure>
-                            <img src="assets/img/javascript.png" alt="logo Javascript"/>
-                        </figure>
-                        <div class="skill-details">
-                            <h4>JavaScript</h4>
-                            <p>Development on Odoo ERP to ...</p>
-                        </div>
-                    </li>
-                    <li class="skill-box">
-                        <figure>
-                            <img src="assets/img/postgresql.png" alt="logo PostgreSQL"/>
-                        </figure>
-                        <div class="skill-details">
-                            <h4>PostgreSQL</h4>
-                            <p>Development on Odoo ERP to ...</p>
-                        </div>
-                    </li>
-                    <li class="skill-box">
-                        <figure>
-                            <img src="assets/img/django.png" alt="logo Django"/>
-                        </figure>
-                        <!-- <div class="skill-details"> -->
-                        <h4>Django</h4>
-                        <p>Development on Odoo ERP to ...</p>
-                        <!-- </div> -->
-                    </li>
-                </div>
-            </article>
-            <!-- <article class="app-skills">
-                <h3>What I'm doing</h3>
-                <ul>
-                    <li>
-                        <figure>
-                            <img src="assets/img/odoo.png" alt="logo Odoo"/>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="assets/img/python.png" alt="logo Python"/>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="assets/img/javascript.png" alt="logo Javascript"/>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="assets/img/postgresql.png" alt="logo PostgreSQL"/>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="assets/img/django.png" alt="logo Django"/>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="assets/img/docker.webp" alt="logo Docker"/>
-                        </figure>
-                    </li>
-                </ul>
-            </article> -->
-        </section>
-        <section class="experience">
-            <article>
-                <header>
-                    <h2>Resume</h2>
-                </header>
-                <div class="section-exp">
-                    <div class="title-exp">
-                        <figure>
-                            <ion-icon name="book-outline"></ion-icon>
-                        </figure>
-                        <h3>Education</h3>
+        <div class="main">
+            <header id="main-header">
+                <nav>
+                    <ul>
+                        <li>About me</li>
+                        <li>Experience</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav> 
+            </header>
+            <section class="about-section" data-page="about">
+                <article class="article-presentation">
+                    <header>
+                        <h2>About me</h2>
+                    </header>
+                    <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                        My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+                    </p>
+                </article>
+                <article class="article-skills">
+                    <div class="title-skills">
+                        <h3>What I'm doing</h3>
+                        <img src="assets/img/profile-mac.png" alt="Profile with a Macbook"/>
                     </div>
-                    <ol class="timeline">
-                        <li class="timeline-item">
-                            <h4>Python App Developer</h4>
-                            <span>2019 - 2021</span>
-                            <p class="timeline-text">
-                                Lorem ipsum.....My job is to build your website so that it is functional
-                                My job is to build your website so that it is functional 
-                            </p>
+                    <ul>
+                        <li class="skill-box">
+                            <figure>
+                                <img src="assets/img/odoo.png" alt="logo Odoo"/>
+                            </figure>
+                            <div class="skill-details">
+                                <h4>Odoo</h4>
+                                <p>
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                </p>
+                            </div>
                         </li>
-                        <li class="timeline-item">
-                            <h4>Web App Developer</h4>
-                            <span>2018 - 2019</span>
-                            <p class="timeline-text">
-                                Lorem ipsum.....My job is to build your website so that it is functional
-                                My job is to build your website so that it is functional 
-                            </p>
+                        <li class="skill-box">
+                            <figure>
+                                <img src="assets/img/python.png" alt="logo Python"/>
+                            </figure>
+                            <div class="skill-details">
+                                <h4>Python</h4>
+                                <p>
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                    Development on Odoo ERP to Odoo ERP to ...
+                                </p>
+                            </div>
                         </li>
-                    </ol>
-                </div>
-                <div class="section-exp">
-                    <div class="title-exp">
-                        <figure>
-                            <ion-icon name="book-outline"></ion-icon>
-                        </figure>
-                        <h3>Experience</h3>
+                        <li class="skill-box">
+                            <figure>
+                                <img src="assets/img/javascript.png" alt="logo Javascript"/>
+                            </figure>
+                            <div class="skill-details">
+                                <h4>JavaScript</h4>
+                                <p>Development on Odoo ERP to ...</p>
+                            </div>
+                        </li>
+                        <li class="skill-box">
+                            <figure>
+                                <img src="assets/img/postgresql.png" alt="logo PostgreSQL"/>
+                            </figure>
+                            <div class="skill-details">
+                                <h4>PostgreSQL</h4>
+                                <p>Development on Odoo ERP to ...</p>
+                            </div>
+                        </li>
+                        <li class="skill-box">
+                            <figure>
+                                <img src="assets/img/django.png" alt="logo Django"/>
+                            </figure>
+                            <!-- <div class="skill-details"> -->
+                            <h4>Django</h4>
+                            <p>Development on Odoo ERP to ...</p>
+                            <!-- </div> -->
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="experience" data-page="experience">
+                <article>
+                    <header>
+                        <h2>Resume</h2>
+                    </header>
+                    <div class="section-exp">
+                        <div class="title-exp">
+                            <figure>
+                                <ion-icon name="book-outline"></ion-icon>
+                            </figure>
+                            <h3>Education</h3>
+                        </div>
+                        <ol class="timeline">
+                            <li class="timeline-item">
+                                <h4>Python App Developer</h4>
+                                <span>2019 - 2021</span>
+                                <p class="timeline-text">
+                                    Lorem ipsum.....My job is to build your website so that it is functional
+                                    My job is to build your website so that it is functional 
+                                </p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4>Web App Developer</h4>
+                                <span>2018 - 2019</span>
+                                <p class="timeline-text">
+                                    Lorem ipsum.....My job is to build your website so that it is functional
+                                    My job is to build your website so that it is functional 
+                                </p>
+                            </li>
+                        </ol>
                     </div>
-                    <ol class="timeline">
-                        <li class="timeline-item">
-                            <h4>Python App Developer</h4>
-                            <span>2019 - 2021</span>
-                            <p class="timeline-text">
-                                Lorem ipsum.....My job is to build your website so that it is functional
-                                My job is to build your website so that it is functional 
-                            </p>
+                    <div class="section-exp">
+                        <div class="title-exp">
+                            <figure>
+                                <ion-icon name="book-outline"></ion-icon>
+                            </figure>
+                            <h3>Experience</h3>
+                        </div>
+                        <ol class="timeline">
+                            <li class="timeline-item">
+                                <h4>Python App Developer</h4>
+                                <span>2019 - 2021</span>
+                                <p class="timeline-text">
+                                    Lorem ipsum.....My job is to build your website so that it is functional
+                                    My job is to build your website so that it is functional 
+                                </p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4>Python App Developer</h4>
+                                <span>2021 - Present</span>
+                                <p class="timeline-text">
+                                    Lorem ipsum.....My job is to build your website so that it is functional
+                                    My job is to build your website so that it is functional 
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+            </section>
+            <section class="projects" data-page="projects">
+                <article>
+                    <header>
+                        <h2>Projects</h2>
+                        <nav>
+                            <ul>
+                                <li>All</li>
+                                <li>Web development</li>
+                                <li>Odoo development</li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <ul class="container-projects">
+                        <li class="project-box">
+                            <figure>
+                                <img src="assets/img/projects/project-1.jpeg" alt="project"/>
+                                <figcaption>
+                                    <h4>Odoo development</h4>
+                                    <div class="project-link">
+                                        <a href="https://elow61.github.com">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                        <a href="#">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </li>
-                        <li class="timeline-item">
-                            <h4>Python App Developer</h4>
-                            <span>2021 - Present</span>
-                            <p class="timeline-text">
-                                Lorem ipsum.....My job is to build your website so that it is functional
-                                My job is to build your website so that it is functional 
-                            </p>
+                        <li class="project-box">
+                            <figure>
+                                <img src="assets/img/projects/project-1.jpeg" alt="project"/>
+                                <figcaption>
+                                    <h4>Web development</h4>
+                                    <div class="project-link">
+                                        <a href="https://elow61.github.com">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                        <a href="#">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </li>
-                    </ol>
-                </div>
-            </article>
-        </section>
-        <section class="projects">
-            <article>
-                <header>
-                    <h2>Projects</h2>
-                    <nav>
-                        <ul>
-                            <li>All</li>
-                            <li>Web development</li>
-                            <li>Odoo development</li>
-                        </ul>
-                    </nav>
-                </header>
-                <div class="container-projects">
-                    
-                </div>
-            </article>
-        </section>
+                        <li class="project-box">
+                            <figure>
+                                <img src="assets/img/projects/project-1.jpeg" alt="project"/>
+                                <figcaption>
+                                    <h4>Fullstack development</h4>
+                                    <div class="project-link">
+                                        <a href="https://elow61.github.com">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                        <a href="#">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="project-box">
+                            <figure>
+                                <img src="assets/img/projects/project-1.jpeg" alt="project"/>
+                                <figcaption>
+                                    <h4>Fullstack development</h4>
+                                    <div class="project-link">
+                                        <a href="https://elow61.github.com">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                        <a href="#">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="contact" data-page="contact">
+                <article>
+                    <header>
+                        <h2>Contact me</h2>
+                    </header>
+                </article>
+                <form action="">
+                    <input type="text" class="form-input" placeholder="Lastname Firstname" required>
+                    <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-input" placeholder="Your message." required></textarea>
+                    <button type="submit" class="btn-style">
+                        Send message
+                    </button> 
+                </form>
+            </section>
+            <footer data-page="footer">
+                <h3>Thanks for your visit!</h3>
+                <img src="assets/img/profile-ok.png" alt="Memoji">
+            </footer>
+        </div>
     </main>
 
     <!-- scripts -->

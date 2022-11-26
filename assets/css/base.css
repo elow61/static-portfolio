@@ -3,8 +3,6 @@
     /* colors */
     --main-dark: #121212;
     --secondary-dark: #1e1e20;
-    /* --main-dark: #1e1f24; */
-    /* --secondary-dark: #292a31; */
     --medium-dark: #292a31;
     --light-dark: #747575;
     --light-yellow: #c2b79b;
@@ -16,16 +14,7 @@
         hsla(240, 1%, 18%, 0.251) 0%, 
         hsla(240, 2%, 11%, 0) 100%
       ), hsl(240, 2%, 13%);
-    /* --bg-gradient: linear-gradient(
-        to bottom right, 
-        #32323b 3%, 
-        #25252c 97%
-    ); */
-    /* --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%), 
-    hsl(0, 0%, 19%)
-  ); */
+
     --bg: linear-gradient(
         to bottom right,
         #3f3f40 3%, 
@@ -39,6 +28,7 @@
     --ff-poppins: 'Poppins', sans-serif;
 
     /* font-size */
+    --fs-1: 2em;
     --fs-3: 17px;
     --fs-4: 12px;
   
@@ -57,10 +47,17 @@
 
     /* transition */
     --transition-1: 0.25s ease;
-    --transition-2: 0.5s ease-in-out;
+    --transition-2: 0.4s ease-in-out;
+    --transition-3: 0.5s ease-in-out;
 }
 
 ion-icon {color: var(--light-yellow);}
+::-moz-selection { /* Code for Firefox */
+    background: var(--light-yellow);
+}
+::selection {
+background: var(--light-yellow);
+}
 
 /* Generic classes */
 .text-white {
