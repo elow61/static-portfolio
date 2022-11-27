@@ -7,6 +7,8 @@
     --light-dark: #747575;
     --light-yellow: #c2b79b;
     --white1: #fff;
+    --white2: #ffffffc9;
+    --light-gray: #d6d6d6;
 
     --bg-gradient: linear-gradient(45deg, #222224, #3a3a3a00);
     --bg-gradient-jet: linear-gradient(
@@ -31,6 +33,7 @@
     --fs-1: 2em;
     --fs-3: 17px;
     --fs-4: 12px;
+    --fs-5: 15px;
   
     /* font-weight */
     --fw-300: 300;
@@ -72,4 +75,10 @@ background: var(--light-yellow);
     border: 1px solid var(--medium-dark);
     box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+}
+
+p, a {
+    color: var(--light-gray);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-4);
 }

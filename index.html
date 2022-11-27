@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <aside class="profile" data-page="profile">
+        <aside class="profile" data-aside="profile">
             <div class="profile-info">
                 <figure class="avatar-content">
                     <img src="assets/img/profile_370.png" alt="Profile" width="80"/>
@@ -18,7 +18,6 @@
                 <div class="profile-desc">
                     <h1 class="name" title="Elodie Meunier">Elodie Meunier</h1>
                     <h2>Python developer</h2>
-                    <button class="btn-style">Contact me</button>
                 </div>
                 <ion-icon class="btn-arrow" data-arrow-down name="chevron-down-outline" size="large"></ion-icon>
             </div>
@@ -28,13 +27,28 @@
                     <figure>
                         <ion-icon name="mail-outline"></ion-icon>
                     </figure>
-                    <a href="mailto:meunier.elodie61@gmail.com">meunier.elodie61@gmail.com</a>
+                    <div>
+                        <h5>Email</h5>
+                        <a href="mailto:meunier.elodie61@gmail.com">meunier.elodie61@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <figure>
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </figure>
+                    <div>
+                        <h5>Birthday</h5>
+                        <p>17 mai 1993</p>
+                    </div>
                 </div>
                 <div class="info-box">
                     <figure>
                         <ion-icon name="location-outline"></ion-icon>
                     </figure>
-                    <p>Alençon, Orne - France</p>
+                    <div>
+                        <h5>Location</h5>
+                        <p>Alençon, Orne - France</p>
+                    </div>
                 </div>
                 <hr class="separator"/>
                 <ul class="social-media-list">
@@ -51,14 +65,14 @@
             <header id="main-header">
                 <nav>
                     <ul>
-                        <li>About me</li>
-                        <li>Experience</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li data-nav-link class="active">About</li>
+                        <li data-nav-link>Experience</li>
+                        <li data-nav-link>Projects</li>
+                        <li data-nav-link>Contact</li>
                     </ul>
                 </nav> 
             </header>
-            <section class="about-section" data-page="about">
+            <section class="about active" data-page="about">
                 <article class="article-presentation">
                     <header>
                         <h2>About me</h2>
@@ -70,7 +84,6 @@
                 <article class="article-skills">
                     <div class="title-skills">
                         <h3>What I'm doing</h3>
-                        <img src="assets/img/profile-mac.png" alt="Profile with a Macbook"/>
                     </div>
                     <ul>
                         <li class="skill-box">
@@ -278,16 +291,24 @@
                         <h2>Contact me</h2>
                     </header>
                 </article>
+                <div class="map" style="width: 100%">
+                    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Le%20Mans,%20France+(My%20Business%20Name)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">
+                        area maps</a>
+                    </iframe>
+                </div>
                 <form action="">
-                    <input type="text" class="form-input" placeholder="Lastname Firstname" required>
-                    <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+                    <h3>Contact form</h3>
+                    <div class="inputs">
+                        <input type="text" class="form-input" placeholder="Lastname Firstname" required>
+                        <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+                    </div>
                     <textarea name="message" id="message" cols="30" rows="10" class="form-input" placeholder="Your message." required></textarea>
                     <button type="submit" class="btn-style">
                         Send message
                     </button> 
                 </form>
             </section>
-            <footer data-page="footer">
+            <footer>
                 <h3>Thanks for your visit!</h3>
                 <img src="assets/img/profile-ok.png" alt="Memoji">
             </footer>
