@@ -283,6 +283,18 @@ section h2::after {
     font-size: 17px;
 }
 
+.projects nav li.active {
+    background-color: var(--light-yellow);
+}
+.container-projects li {
+    display: none;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+.container-projects li.active {
+    display: block;
+    animation: fade 0.5s ease backwards;
+}
 /* SECTION CONTACT */
 .contact form {
     display: grid;
