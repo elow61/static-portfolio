@@ -20,6 +20,11 @@ section.active {
   display: block;
   animation: fade 0.5s ease backwards;
 }
+footer {display: none;}
+footer.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
 @keyframes fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -283,8 +288,18 @@ section h2::after {
     font-size: 17px;
 }
 
+.projects .overlay {
+	position: absolute;
+	background-color: aquamarine;
+	z-index: -1;
+	transition: .3s ease left, width, opacity;
+	opacity: 0;
+}
+.projects .overlay.active {
+	opacity: 1;
+}
 .projects nav li.active {
-    background-color: var(--light-yellow);
+    background-color: #c2b79b1a;
 }
 .container-projects li {
     display: none;

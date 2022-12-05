@@ -29,17 +29,43 @@ for (let i = 0; i < navLinks.length; i++) {
 // Manage projects
 const navProjects = document.querySelectorAll('[data-nav-project]')
 const projects = document.querySelectorAll('[data-project]')
+const overlay = document.querySelector('section.projects .overlay');
+
+navProjects.forEach((list) => {
+	list.addEventListener('mouseover', () => {
+		let position = list.getBoundingClientRect();
+		overlay.classList.add('active');
+		overlay.style.left = position.x + 'px';
+		overlay.style.top = position.y + 'px';
+		overlay.style.height = position.height + 'px';
+		overlay.style.width = position.width + 'px';
+	});
+	list.addEventListener('mouseout', () => {
+		overlay.classList.remove('active');
+	});
+});
+
 
 for (let i = 0; i < navProjects.length; i++) {
     navProjects[i].addEventListener('click', function () {
-        for (let i = 0; i < projects.length; i++) {
-            if (this.dataset.navProject === projects[i].dataset.project || this.dataset.navProject === 'all') {
-                projects[i].classList.add('active');
-                navProjects[i].classList.add('active');
-            } else {
-                projects[i].classList.remove('active');
-                navProjects[i].classList.remove('active');
-            }
+        console.log(this.dataset.navProject)
+        console.log(navProjects[i].dataset.navProject)
+        if (this.dataset.navProject == navProjects[i].dataset.navProject) {
+            navProjects[i].classList.add('active');
+        } else {
+            navProjects[i].classList.remove('active');
         }
+        displayProjects(nav=navProjects[i]);
     })
+}
+
+displayProjects = function (nav) {
+    for (let i = 0; i < projects.length; i++) {
+        if (nav.dataset.navProject === projects[i].dataset.project || nav.dataset.navProject === 'all') {
+            projects[i].classList.add('active');
+            window.scrollTo(0, 0);
+        } else {
+            projects[i].classList.remove('active');
+        }
+    }
 }
