@@ -31,6 +31,7 @@
 
     /* font-size */
     --fs-1: 2em;
+    --fs-2: 1em;
     --fs-3: 17px;
     --fs-4: 12px;
     --fs-5: 15px;
@@ -59,7 +60,7 @@ ion-icon {color: var(--light-yellow);}
     background: var(--light-yellow);
 }
 ::selection {
-background: var(--light-yellow);
+    background: var(--light-yellow);
 }
 
 /* Generic classes */

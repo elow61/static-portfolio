@@ -3,7 +3,6 @@ body {
     color: var(--white1);
     background-color: var(--main-dark);
     font-family: var(--ff-poppins);
-    font-size: var(--fs-4);
     margin-bottom: 10px;
 }
 
@@ -55,14 +54,13 @@ nav ul li.active {
     color: var(--light-yellow);
 }
 nav ul li:hover, nav ul li:focus {
-    color: var(--light-dark);
+    color: var(--light-yellow);
 }
 
 /* PROFILE */
 .profile {
-    font-size: var(--fs-4);
     width: auto;
-    max-height: 150px;
+    max-height: 125px;
     transition: var(--transition-2);
 }
 .profile-info {
@@ -89,6 +87,7 @@ nav ul li:hover, nav ul li:focus {
 h1 {
     white-space: nowrap;
     font-size: var(--fs-3);
+    margin-bottom: 0;
 }
 .profile-desc h2 {
     background-color: var(--medium-dark);
@@ -137,7 +136,6 @@ h1 {
 .info-box a {
     display: block;
     margin-bottom: 15px;
-    font-size: var(--fs-5);
     color: var(--light-gray);
     font-weight: var(--fw-300);
 }
@@ -369,33 +367,38 @@ footer img {
 
 /* MEDIA QUERIES */
 @media (min-width: 425px) {
+    h1 {font-size: 1.5em;}
+    h2 {font-size: revert;}
+    p, a {font-size: revert;}
     .profile {max-height: 130px;}
     .profile-desc button {display: none;}
 }
 
 @media (min-width: 580px) {
-    body {font-size: var(--fs-3);}
+    .social-media-list ion-icon {font-size: 20px !important;}
     footer {margin-bottom: 50px;}
     main {
         width: 520px;
         margin-inline: auto;
     }
-    h1 {
-        font-size: var(--fs-1);
-    }
 }
 
 @media (min-width: 768px) {
+    h1 {
+        font-size: var(--fs-1);
+        margin-top: 10px;
+    }
     p, a {
         color: var(--light-gray);
         font-weight: var(--fw-300);
-        font-size: var(--fs-5);
     }
     main {
         width: 700px;
         margin-inline: auto;
     }
-    aside, section {padding: 25px}
+    section {padding: 25px;}
+    .social-media-list {gap: 20px;}
+    .social-media-list ion-icon {font-size: 25px !important;}
     .article-skills ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -412,6 +415,7 @@ footer img {
         position: relative;
         margin-inline: auto;
     }
+    .profile-desc h2 {font-size: var(--fs-3);}
     footer {margin-bottom: 20px;}
     .container-projects {
         grid-template-columns: repeat(3, 1fr);
@@ -445,11 +449,12 @@ footer img {
 
 @media (min-width: 1250px) {
     main {
-        width: 1100px;
+        width: 1200px;
         margin-inline: auto;
         display: flex;
         gap: 10px;
     }
+    h1 {margin-bottom: revert;}
     #main-header {margin-top: 10px;}
     aside.profile {
         position: sticky;
@@ -457,6 +462,10 @@ footer img {
         height: 100%;
         max-height: max-content;
     }
+    .avatar-content img {width: 155px;}
+    .info-box h5 {font-size: var(--fs-3);}
+    a, p, li {font-size: 1.1em;}
+    .profile.active {max-height: max-content;}
     div.main {
         width: 100%;
         margin-top: 20px;

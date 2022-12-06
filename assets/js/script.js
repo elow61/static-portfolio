@@ -9,7 +9,7 @@ btnArrow.addEventListener('click', () => {toggleElement(profile);});
 // page navigation variables
 const navLinks = document.querySelectorAll('[data-nav-link]');
 const pages = document.querySelectorAll('[data-page]');
-
+const footer = document.querySelector('footer');
 // add event to all nav link
 for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', function () {
@@ -18,6 +18,11 @@ for (let i = 0; i < navLinks.length; i++) {
                 pages[i].classList.add('active');
                 navLinks[i].classList.add('active');
                 window.scrollTo(0, 0);
+                if (this.innerHTML.toLowerCase() === 'contact') {
+                    footer.classList.add('active');
+                } else {
+                    footer.classList.remove('active');
+                }
             } else {
                 pages[i].classList.remove('active');
                 navLinks[i].classList.remove('active');
